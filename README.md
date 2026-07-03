@@ -1,17 +1,16 @@
 # CxOne Project Retirement Tool
 
-User guide for `cxone_retire_projects.py`
-
----
-
 ## Introduction
 
-Automates end-of-life processing for Checkmarx One projects. For each project in the input list, the tool generates a PDF security report, validates the download, and optionally deletes the project. Runs are resumable; progress is tracked via control files so interrupted runs can be safely restarted.
+Automates end-of-life processing for Checkmarx One projects. 
+
+For each project in the input list, the tool generates a PDF security report, validates the download, and optionally deletes the project. 
+
+Runs are resumable; progress is tracked via control files so interrupted runs can be safely restarted.
 
 **Prerequisites**
 
 - Python 3.10+ with `requests` installed (`pip install requests`)
-- `cxone_retire_projects.py`, `cxsupport.py`, `logsupport.py`, `config.ini` in the same folder
 - `config.ini` populated with CxOne host URLs and API credentials
 
 ---
