@@ -21,6 +21,8 @@ Runs are resumable; progress is tracked via control files so interrupted runs ca
 python cxone_retire_projects.py --config <ini> (--projects <names> | --csv <file>) [OPTIONS]
 ```
 
+#### Usage examples
+
 **Report only, two projects:**
 ```bash
 python cxone_retire_projects.py --config prod.ini \
@@ -39,7 +41,7 @@ python cxone_retire_projects.py --config prod.ini \
     --csv retire_projects.csv --poll-timeout 1200 --delete
 ```
 
-**CSV format:** one project name per line; optional header row is skipped automatically.
+**CSV format:** one project name per line; optional header row is skipped automatically. _See included sample_to_retire.csv for an example_
 
 ---
 
